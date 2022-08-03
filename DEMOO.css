@@ -1,0 +1,71 @@
+ .papa {
+       
+        display: flex;   /*rendre flexible les elements de de larticle*/
+        flex-wrap: wrap;/* pour definir le comportement des element sil rencontre quelque choses */
+        height: 402px;/*largeur */
+        width: auto;/* longueur*/
+        justify-content: center;/* ajuster le contenue au centre */
+      }
+      
+img{
+    width:100%;/* longueur de limage  */
+    height:350; /* largeur de limage */
+   
+    position: relative; /* position de limage */
+    left: 0%;
+    margin-top: 0%; /*pour eliminer la marge au dessus de limage */
+
+}
+
+      h2 {
+        color: rgb(245, 255, 240); /* couleur du text*/
+        text-align: center;/* aligner le text au centre */
+        margin-bottom: -0.1%; /* marge au dessous du text*/
+        font-weight:bold;/* pour le poids du texte */
+        font-size: 50px; /* pour la taille du texte */
+
+      }
+      body {
+        background-color:#a8cc31;/* arriere plan du body*/
+        justify-content: center; /* ajuster le contenue du body au centre */
+        margin-left: 0%;/* marge a gache */
+        margin-right: 0%; /* marge a droite */
+        margin-top: 0%;/*marge au dessous*/
+        
+        
+      }
+      p{ 
+        color: #0b24fb;/* couleur du texte */
+        font-size: 35px;/* */
+        font-weight: bold;
+        margin-bottom: -100px;
+        writing-mode:vertical-rl;/* mettre le texte en vertical */
+       
+       margin-top: 10%;
+       
+      }
+      
+      .di {
+        width: 920px;
+        height: 230px;
+        border: 3px solid rgb(32, 5, 5);/*la bordure des blocs */
+        border-radius: 10px;
+        margin: 5px;
+        background-color:#fed649;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
