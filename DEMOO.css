@@ -1,4 +1,25 @@
- .papa {
+ #icone{
+
+ 
+  
+  border-radius: 29px;
+ }
+ #button{
+
+  width: 55px;
+  height: 59px;
+  border: 5px solid rgb(167, 12, 214);
+  border-radius: 29px;
+ }
+ .icon{
+  display: flex;
+  justify-content: center;
+  margin-top: 88px;
+ }
+ 
+ 
+ 
+ #papa {
        
         display: flex;   /*rendre flexible les elements de de larticle*/
         flex-wrap: wrap;/* pour definir le comportement des element sil rencontre quelque choses */
@@ -25,7 +46,7 @@ img{
         font-size: 50px; /* pour la taille du texte */
 
       }
-      body {
+    #body {
         background-color:#a8cc31;/* arriere plan du body*/
         justify-content: center; /* ajuster le contenue du body au centre */
         margin-left: 0%;/* marge a gache */
@@ -34,7 +55,7 @@ img{
         
         
       }
-      p{ 
+      #p{ 
         color: #0b24fb;/* couleur du texte */
         font-size: 35px;/* */
         font-weight: bold;
@@ -45,7 +66,7 @@ img{
        
       }
       
-      .di {
+      #dic{
         width: 920px;
         height: 230px;
         border: 3px solid rgb(32, 5, 5);/*la bordure des blocs */
