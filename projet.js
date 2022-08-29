@@ -1,6 +1,5 @@
 
 
-
 let choix = true;
 function change(){
     let button = document.getElementById("body");
@@ -55,3 +54,30 @@ else{
      
  }
  
+ 
+ 
+
+
+ function alrt(){
+
+    let prenom1=document.getElementById("prenom").value
+    let nom2=document.getElementById("nom").value 
+    let tel4=document.getElementById("numero").value 
+    let mail3=document.getElementById("email").value 
+    let mes5=document.getElementById("message").value
+    let infos=[prenom1,nom2,mail3,tel4,mes5];
+    console.log(infos);
+
+ alert("vos données : \n"+
+ "Prenom: " + prenom1+
+ "\nNom: " + nom2+
+ "\nEmail: " +mail3+
+ "\nTel: " +tel4+
+ "\nmessage: " +mes5
+ );
+   
+}
+
+ 
+ 
+
