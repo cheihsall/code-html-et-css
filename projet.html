@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html >
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="stylesheet" href="DEMOO.css">
     <title>Index</title>
 
@@ -29,31 +28,39 @@
 </div>
 
 <div class="icon"> 
-    <button id="button" onclick="change()"><img id="icone" src="icone.png" alt="">
+    <button id="button" onclick="change()">
 </button></div>
 
 
-<div id="box">
-    <form action="">
-        <label for="prenom">Prenom</label><br>
-        <input type="text" id="prenom" required placeholder="Prenom" ><br>
-     
-        <label for="nom">Nom</label><br>
-        <input type="text" id="nom" required placeholder="Nom" ><br>
-        <label for="numero">Téléphone</label><br>
-        <input type="tel" id="numero" required placeholder="00221 77 783 93 59" ><br>
-        <label for="email">Adresse mail</label><br>
-        <input type="email" id="email" required placeholder="Adresse mail" ><br>
-        <label for="message">Message</label><br>
-        <textarea name="message" id="message" rows="8" cols="35" placeholder="votre message..." ></textarea><br>
-        <button id="boutton" onclick="alrt()"> envoyer</button></div>
-    </form>
-    <div id="message">
-<p id="apparition"> </p>
+<div id="formulaire">
+
+    <div id="box">
+        <form action="#" autocomplete="on" id="form" method="post">
+            <label for="prenom">Prenom</label><br>
+            <input type="text" id="prenom" required placeholder="Prenom" ><br>
+         
+            <label for="nom">Nom</label><br>
+            <input type="text" id="nom" required placeholder="Nom" ><br>
+            
+            <label for="email">Adresse mail</label><br>
+            <input type="email" id="email" required placeholder="Adresse mail" ><br>
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" rows="8" cols="35" placeholder="votre message..." ></textarea><br>
+             <input type="button" value="Envoyer" id="envoyer" onclick="afficher()"></div>
+        </form>
+        <div id="apparition">
+        
+                <p class="zone">Prénom:   <span id="p1"></span></p><br>
+                <p class="zone">Nom:   <span id="p2"></span></p><br>
+                <p class="zone">Email:   <span id="p3"></span></p><br>
+                <p class="zone">Commentaire:   <span id="p4"></span></p>
+            
+        </div>
     </div>
+    
+
 </div>
 
-
-  <script src="projet.js"></script> 
+  <script defer type="text/javascript" src="projet.js"></script> 
 </body>
 </html>

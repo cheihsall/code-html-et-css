@@ -56,28 +56,48 @@ else{
  
  
  
-
-
- function alrt(){
-
-    let prenom1=document.getElementById("prenom").value
-    let nom2=document.getElementById("nom").value 
-    let tel4=document.getElementById("numero").value 
-    let mail3=document.getElementById("email").value 
-    let mes5=document.getElementById("message").value
-    let infos=[prenom1,nom2,mail3,tel4,mes5];
-    console.log(infos);
-
- alert("vos données : \n"+
- "Prenom: " + prenom1+
- "\nNom: " + nom2+
- "\nEmail: " +mail3+
- "\nTel: " +tel4+
- "\nmessage: " +mes5
- );
-   
-}
-
+ function afficher(){
+    /*        Récupération des données         */
+    if(document.getElementById('prenom').value == "")  {
+      alert("Veuillez entrer votre prenom!");
+      document.getElementById('prenom').focus();
+      return false;
+     }
+    localStorage.setItem('Prenom', document.getElementById('prenom').value);
+    if(document.getElementById('nom').value == "") {
+      alert("Veuillez entrer votre nom!");
+      document.getElementById('nom').focus();
+      return false;
+     }
+    localStorage.setItem('Nom', document.getElementById('nom').value);
+    if(document.getElementById('email').value == "") {
+      alert("Veuillez entrer votre email!");
+      document.getElementById('email').focus();
+      return false;
+     }
+    if(document.getElementById('email').value.indexOf('@') == -1) {
+      alert("Ce n'est pas une adresse électronique!");
+      document.getElementById('email').focus();
+      return false;
+    }
+    localStorage.setItem('Email', document.getElementById('email').value);
+    if(document.getElementById('message').value == "") {
+      alert("Veuillez entrer votre commentaire!");
+      document.getElementById('message').focus();
+      return false;
+     }
+    localStorage.setItem('message', document.getElementById('message').value);
+    /*        Affichage des données            */
+    document.getElementById('p1').innerHTML = localStorage.getItem('Prenom');
+    document.getElementById('p2').innerHTML = localStorage.getItem('Nom');
+    document.getElementById('p3').innerHTML = localStorage.getItem('Email');
+    document.getElementById('p4').innerHTML = localStorage.getItem('message');
+  }
+  
+  
+  
+  
+  
  
  
 
